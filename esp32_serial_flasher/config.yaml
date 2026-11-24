@@ -1,0 +1,26 @@
+name: ESP32 Serial Flasher
+slug: esp32_serial_flasher
+description: Expose a USB UART device over the network using RFC2217
+version: "0.1.0"
+url: https://github.com/REPLACE_WITH_GITHUB_USER/ha-esp32-serial-flasher
+startup: services
+boot: manual
+init: false
+arch:
+  - amd64
+  - aarch64
+
+uart: true
+
+ports:
+  2010/tcp: 2010
+ports_description:
+  2010/tcp: RFC2217 serial connection
+
+options:
+  device: null
+  baudrate: 115200
+
+schema:
+  device: device(subsystem=tty)
+  baudrate: int(9600,921600)

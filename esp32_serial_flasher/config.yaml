@@ -2,7 +2,7 @@ name: ESP32 Serial Flasher
 slug: esp32_serial_flasher
 description: Expose a USB UART device over the network using RFC2217
 version: "0.1.0"
-url: https://github.com/REPLACE_WITH_GITHUB_USER/ha-esp32-serial-flasher
+url: https://github.com/lboue/ha-esp32-serial-flasher
 startup: services
 boot: manual
 init: false
